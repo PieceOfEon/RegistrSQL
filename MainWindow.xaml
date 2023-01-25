@@ -1,0 +1,31 @@
+﻿<Window 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegistrSQL"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Name="window" x:Class="RegistrSQL.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0.5,0">
+
+                    <GradientStop Color="#FF00F3F9" Offset="0"/>
+                    <GradientStop Color="#FFCE00FF" Offset="0.602"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+
+
+            <TextBox TextDecorations="Strikethrough" Padding="2" x:Name="NamesH"   Width="250" Height="30" Margin="50" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="First Name" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <TextBox Padding="2" x:Name="EmailH"   Width="250" Height="30" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="E-mail address" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0" Margin="0,-25,0,0"/>
+            <TextBox Padding="2" x:Name="UsernameH"   Width="250" Height="30" Margin="25" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Username" Style="{StaticResource ResourceKey=MaterialDesignTextBox}" FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+            <PasswordBox Padding="2" x:Name="PassH"  PasswordChar="$"  Width="250" Height="30" Margin="25,0,25,25" Background="#7FFFFFFF"  materialDesign:HintAssist.Hint="Password"  FontSize="16" BorderThickness="0,0,0,1" mah:ControlsHelper.FocusBorderThickness="0,0,10,0"/>
+
+        </StackPanel>
+        <Button x:Name="Butt" Height="30" Width="120" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="335,279,0,0" Click="Butt_Click"/>
+
+    </Grid>
+</Window>
